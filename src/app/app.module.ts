@@ -7,6 +7,7 @@ import { ApieComponent } from './apie/apie.component';
 import { PaslaugosComponent } from './paslaugos/paslaugos.component';
 import { KontaktaiComponent } from './kontaktai/kontaktai.component';
 import { RouterModule } from '@angular/router';
+import {LayoutModule} from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
+    LayoutModule,
     RouterModule,
     RouterModule.forRoot([
       {path:'#', component:TitulinisComponent},

@@ -1,20 +1,33 @@
-<header>
-  <nav>
-    <a class="button" routerLink="/#" routerLinkActive="activebutton">Titulinis</a>
-    <a class="button" routerLink="/apie" routerLinkActive="activebutton">Apie</a>
-    <a class="button" routerLink="/paslaugos" routerLinkActive="activebutton">Paslaugos</a>
-    <a class="button" routerLink="/kontaktai" routerLinkActive="activebutton">Kontaktai</a>
+<div class="container">
+  <div id="header">  
+    <div class="header-logo">
+      <h1>
+        Toma Coaching
+      </h1>
+    </div>
+      <div class="header-nav">
+        <div class="header-nav-nav" [hidden]="!burgerhide">
+          <nav>
+            <a class="button" routerLink="#" routerLinkActive="activebutton">Titulinis</a>
+            <a class="button" routerLink="/apie" routerLinkActive="activebutton">Apie</a>
+            <a class="button" routerLink="/paslaugos" routerLinkActive="activebutton">Paslaugos</a>
+            <a class="button" routerLink="/kontaktai" routerLinkActive="activebutton">Kontaktai</a>
+          </nav>
+        </div>
+        <div class="header-nav-burger" [hidden]="burgerhide" [ngClass]="{'change':rez}" (click)="burger()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+  </div>
+  <div id="body">
+    <router-outlet></router-outlet>
+  </div>
+  <div id="footer">
+    <div class="footer-contact">
+      facebook    </div>
+    <div class="footer-social">facebookas</div>  
+  </div>
+</div>
 
-  </nav>
-
-</header>
-
-<main>
-  <router-outlet></router-outlet>  
-</main>
-
-<footer>
-
-</footer>
-
-   
