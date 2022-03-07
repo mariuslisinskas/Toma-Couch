@@ -22,7 +22,7 @@ import {LayoutModule} from '@angular/cdk/layout';
     LayoutModule,
     RouterModule,
     RouterModule.forRoot([
-      {path:'#', component:TitulinisComponent},
+      {path:'', component:TitulinisComponent},
       {path:'apie', component:ApieComponent},
       {path:'paslaugos', component:PaslaugosComponent},
       {path:'kontaktai', component:KontaktaiComponent}

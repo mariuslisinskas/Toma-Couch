@@ -4,4 +4,9 @@
     font-family: "Wild";
     src: local("Wild"), url(./assets/fonts/Wild.otf) format("truetype");
 }
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Montserrat:ital@1&display=swap');
+@font-face {
+    font-family: "Proxima";
+    src: local("Proxima"), url(./assets/fonts/Proxima.otf) format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Montserrat:ital@0;1&family=Open+Sans&family=Oswald:wght@700&display=swap');

@@ -5,15 +5,24 @@
         Toma Coaching
       </h1>
     </div>
-      <div class="header-nav">
-        <div class="header-nav-nav" [hidden]="!burgerhide">
+    <div class="header-nav">
+        <div class="header-nav-nav" *ngIf="navhide1">
           <nav>
-            <a class="button" routerLink="#" routerLinkActive="activebutton">Titulinis</a>
+            <a class="button" routerLink="/" routerLinkActive="activebutton">Titulinis</a>
             <a class="button" routerLink="/apie" routerLinkActive="activebutton">Apie</a>
             <a class="button" routerLink="/paslaugos" routerLinkActive="activebutton">Paslaugos</a>
             <a class="button" routerLink="/kontaktai" routerLinkActive="activebutton">Kontaktai</a>
           </nav>
-        </div>
+          
+      </div>
+      <div class="header-nav-nav-hid" *ngIf="navhide2" (click)="burger()">
+        <nav>
+          <a class="button" routerLink="/" routerLinkActive="activebutton">Titulinis</a>
+          <a class="button" routerLink="/apie" routerLinkActive="activebutton">Apie</a>
+          <a class="button" routerLink="/paslaugos" routerLinkActive="activebutton">Paslaugos</a>
+          <a class="button" routerLink="/kontaktai" routerLinkActive="activebutton">Kontaktai</a>
+        </nav>
+      </div>
         <div class="header-nav-burger" [hidden]="burgerhide" [ngClass]="{'change':rez}" (click)="burger()">
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -26,8 +35,17 @@
   </div>
   <div id="footer">
     <div class="footer-contact">
-      facebook    </div>
-    <div class="footer-social">facebookas</div>  
+      <img src="assets/social/fb.png" alt="facebook link">    
+    </div>
+    <div class="footer-contact">
+      <img src="assets/social/in.png" alt="instagram link">    
+    </div>
+    <div class="footer-contact">
+      <img src="assets/social/ml.png" alt="email">    
+    </div>
+    <div class="footer-contact">
+      <img src="assets/social/wt.png" alt="call">    
+    </div>
   </div>
 </div>
 

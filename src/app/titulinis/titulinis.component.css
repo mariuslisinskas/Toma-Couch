@@ -1,1 +1,88 @@
-/* No CSS *//*# sourceMappingURL=titulinis.component.css.map */
+.container {
+  margin: 20px;
+  margin-bottom: 50px;
+}
+
+.container .top .top-word h1 {
+  font-family: 'Karla';
+  line-height: 1.3;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container .top .top-word h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.container .top .top-photo .top-photo-img {
+  z-index: 10;
+}
+
+.container .top .top-photo .top-photo-bg {
+  z-index: 100;
+}
+
+.container .top p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  text-indent: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container .top .hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(0, 0, 0, 0.75)), to(transparent));
+  background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+.container .feedback {
+  position: relative;
+}
+
+.container .feedback h2 {
+  font-family: 'Karla';
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.container .feedback .feedback-img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 70px;
+  left: calc(50vw - 100px);
+  border-radius: 50%;
+  border: 5px solid white;
+  background-image: url(/assets/photos/1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container .feedback .feedback-content {
+  margin-top: 100px;
+  background-color: #dcecfb;
+}
+
+.container .feedback .feedback-content p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  text-indent: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container .feedback .feedback-content strong {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=titulinis.component.css.map */
